@@ -1,59 +1,60 @@
 ion-item {
   --padding-start: 0;
   --inner-padding-end: 0;
+  border-radius: 30px;
+  border-style: none;
+  --ion-background-color: white;
+  margin: 25px;
 }
 
 ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+
 }
 
 ion-item h2 {
   font-weight: 600;
   margin: 0;
+  padding: 5px;
 }
-
-ion-item p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 95%;
-}
-
-ion-item .date {
-  float: right;
-  align-items: center;
-  display: flex;
-}
-
-ion-item ion-icon {
-  color: #c9c9ca;
+ion-item h3{
+  padding: 5px;
 }
 
 ion-item ion-note {
   font-size: 15px;
-  margin-right: 8px;
   font-weight: normal;
-}
-
-ion-item ion-note.md {
-  margin-right: 14px;
-}
-
-.dot {
-  display: block;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  align-self: start;
-  margin: 16px 10px 16px 16px;
-}
-
-.dot-unread {
-  background: var(--ion-color-primary);
+  float: right;
+  margin-top: 30px;
+  position: absolute;
+  right: 6%;
 }
 
 ion-footer ion-title {
   font-size: 11px;
   font-weight: normal;
+}
+
+ion-img{
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+.ion-text-wrap{
+  display: flex;
+}
+
+ion-icon{
+  float: right;
+  font-size: 26px;
+  position: absolute;
+  right: 5%;
+}
+
+.price{
+  display: flex;
+}
+.price h3{
+  padding-left: 5px;
 }

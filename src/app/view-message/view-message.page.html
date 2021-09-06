@@ -1,29 +1,57 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+<ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
+  </ion-buttons>
+  <div class="share">
+    <ion-icon name="share-social-outline"></ion-icon>
+  </div>
+</ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" *ngIf="message">
-  <ion-item>
-    <ion-icon name="person-circle" color="primary"></ion-icon>
-    <ion-label class="ion-text-wrap">
-      <h2>
-        {{ message.fromName }}
-        <span class="date">
-          <ion-note>{{ message.date }}</ion-note>
-        </span>
-      </h2>
-      <h3>To: <ion-note>Me</ion-note></h3>
-    </ion-label>
-  </ion-item>
-  
-  <div class="ion-padding">
-    <h1>{{ message.subject }}</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+
+
+<ion-label class="ion-text-wrap">
+  <ion-img [src]= "message.imageUrl"></ion-img>
+  <h1>{{ message.subject }}</h1>
+  <div class="details">
+    <h2>
+      {{ message.fromName}} / 
+    </h2>
+    <ion-icon name="navigate-circle-outline"></ion-icon>
+    <h3>{{ message.place }} </h3>
   </div>
+  <div class="des-btn">
+    <ion-button >Description</ion-button>
+    <ion-button >Company</ion-button>
+    <ion-button >Reviews</ion-button>
+  </div>
+    <ion-item>
+      <ion-list>
+      <div>
+        <h2> Qualification: </h2> 
+      </div>
+      <div>
+        {{ message.qualification1 }} <br>
+        {{ message.qualification2 }} <br>
+        {{ message.qualification3 }} <br>
+        {{ message.qualification4 }} <br>  
+      </div> 
+    </ion-list> 
+    </ion-item> 
+    <ion-item>
+    <ion-list>
+      <h2> About the Job: </h2>
+      {{ message.aboutJob }} <br>
+    </ion-list>         
+  </ion-item>
+</ion-label>
+  <ion-footer>
+    <ion-toolbar>
+      <div class="bottom-icon"><ion-icon name="star-outline"></ion-icon></div>
+      <ion-button >Apply for JOb</ion-button>
+    </ion-toolbar>
+  </ion-footer>
 </ion-content>
+

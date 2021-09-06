@@ -1,40 +1,105 @@
 ion-item {
   --inner-padding-end: 0;
   --background: transparent;
-}
-
-ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  display: flex;
 }
 
 ion-item h2 {
   font-weight: 600;
 }
 
-ion-item .date {
-  float: right;
-  align-items: center;
-  display: flex;
-}
-
-ion-item ion-icon {
-  font-size: 42px;
-  margin-right: 8px;
-}
-
-ion-item ion-note {
-  font-size: 15px;
-  margin-right: 12px;
-  font-weight: normal;
+ion-icon {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 h1 {
   margin: 0;
   font-weight: bold;
   font-size: 22px;
+  text-align: center;
 }
 
 p {
   line-height: 22px;
+}
+ion-img{
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+.share ion-icon{
+  font-size: 28px;
+  float: right;
+  margin-right: 20px;
+
+}
+
+.details h2{
+  font-weight: bolder;
+}
+
+ion-button{
+  --border-radius:18px;
+  --ion-color-primary: white;
+  --padding-top:25px;
+  --padding-bottom: 25px;
+  --color: #252b30;
+  font-weight: bold;
+}
+ion-button:hover{
+  --ion-color-primary: #252b30;
+  --color:white;
+}
+
+.des-btn{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20PX;
+}
+ion-content{
+  --ion-background-color: whitesmoke;
+}
+ion-list{
+  --ion-background-color: white;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 29px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+ion-footer ion-toolbar{
+  position: fixed;
+  bottom: 0px;
+  --ion-background-color: white;
+  
+}
+
+.bottom-icon ion-icon{
+  float: left;
+  margin-left: 25px;
+  font-size: 50px;
+  margin-top: 9px;
+}
+
+ion-toolbar ion-button{
+  --ion-color-primary: rgb(238, 184, 9);
+  --color: white;
+  --padding-end:45px;
+  --padding-start: 45px;
+  float: right;
+  margin-right: 29px;
+  margin-bottom: 30px;
+  margin-top: 10px
 }
