@@ -1,0 +1,7 @@
+{
+  "name": "UiTask",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
